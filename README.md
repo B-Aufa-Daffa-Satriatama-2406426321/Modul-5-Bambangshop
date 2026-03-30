@@ -97,3 +97,16 @@ Fitur di postman yang mungkin berguna
 - environment variables, karena bisa ganti url dengan mudah
 
 #### Reflection Publisher-3
+
+1. Di sini, kita menggunakan Push Model dari Observer Pattern. Publisher (misalnya Program) langsung mengirim data/event ke subscriber saat terjadi perubahan (misalnya publish atau update), jadi subscriber tinggal menerima tanpa perlu minta data lagi
+
+2. Kelebihan pull model:
+- fleksibel: subscriber bisa ambil data yang diperlukan saja
+- lebih ringan di publisher, publisher cuma kirim sinyal/event, bukan data lengkap
+
+Kekurangan pull model:
+- lebih kompleks: subscriber harus tahu kapan dan bagaimana minta data
+- bisa menyebabkan delay: subscriber harus minta data setelah dapat sinyal, jadi ada tambahan langkah
+
+3. Kalau notification process tidak pakai multi-threading, maka semua notifikasi akan dijalankan secara sequential (satu per satu) di thread utama. Ini dapat membuat response menjadi lebih lambat
+
