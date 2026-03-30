@@ -78,6 +78,12 @@ This is the place for you to write reflections:
 
 #### Reflection Publisher-1
 
+1. Kita masih memerlukan trait karena trait bisa mengimplementasikan berbagai jenis subscriber, bukan cuma 1 jenis saja.
+
+2. Kita perlu menggunakan DashMap karena DashMap pasti membuat key-nya unik
+
+3. Kita masih memerlukan DashMap karena DashMap bisa mengamankan data dari race condition.
+
 #### Reflection Publisher-2
 
 #### Reflection Publisher-3
