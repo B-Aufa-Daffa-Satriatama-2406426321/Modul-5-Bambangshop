@@ -29,3 +29,4 @@ impl SubscriberRepository {
             .iter()
             .map(|f| f.value().clone()).collect();
     }
+}
