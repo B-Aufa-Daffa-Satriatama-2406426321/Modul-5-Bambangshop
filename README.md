@@ -86,4 +86,14 @@ This is the place for you to write reflections:
 
 #### Reflection Publisher-2
 
+1. Kalau kita pisah, kita akan lebih mudah melakukan maintanibility karena logika untuk repository dan logika bisnis terpisah.
+
+2. Jika hanya menggunakan Model, setiap model (Program, Subscriber dan Notification) harus menangani data, business logic, dan interaksi sekaligus, sehingga menyebabkan tight coupling dan kompleksitas tinggi.
+
+3. Dengan postman, kita bisa kirim HTTP request (GET, POST, etc) ke endpoint yang lagi kita buat, lihat response, dan melakukan pengecekan apakah logic di backend sudah jalan dengan benar tanpa harus membuat frontend dulu.
+
+Fitur di postman yang mungkin berguna
+- collections, karena bisa mengelompokkan endpoint agar rapi
+- environment variables, karena bisa ganti url dengan mudah
+
 #### Reflection Publisher-3
